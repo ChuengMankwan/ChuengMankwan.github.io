@@ -1,0 +1,107 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
+<article>
+    <div class="cell" style="font-size: 16px;">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <b style="font-size: 18px;">Prompting ChatGPT in MNER: Enhanced Multimodal Named Entity Recognition with Auxiliary Refined Knowledge (EMNLP 2023)</b>
+			<span style="font-size: 16px;"> [<a href="https://aclanthology.org/2023.findings-emnlp.184.pdf">PDF</a>], [<a href="https://github.com/JinYuanLi0012/PGIM">Code</a>], 
+				[<a href="https://s3.amazonaws.com/pf-user-files-01/u-59356/uploads/2023-11-26/qr13w2x/PGIM.mp4">Video</a>], [<a href="https://s3.amazonaws.com/pf-user-files-01/u-59356/uploads/2023-11-26/3623wgo/PGIM%20poster.pdf">Poster</a>]</span>
+                        <br>
+                        <span style="font-size: 16px;">Multimodal Named Entity Recognition (MNER) on social media aims to enhance textual entity prediction by incorporating image-based clues. Existing studies mainly focus on maximizing the utilization of pertinent image information or incorporating external knowledge from explicit knowledge bases. However, these methods either neglect the necessity of providing the model with external knowledge, or encounter issues of high redundancy in the retrieved knowledge. In this paper, we present PGIM --- a two-stage framework that aims to leverage ChatGPT as an implicit knowledge base and enable it to heuristically generate auxiliary knowledge for more efficient entity prediction. Specifically, PGIM contains a Multimodal Similar Example Awareness module that selects suitable examples from a small number of predefined artificial samples. These examples are then integrated into a formatted prompt template tailored to the MNER and guide ChatGPT to generate auxiliary refined knowledge. Finally, the acquired knowledge is integrated with the original text and fed into a downstream model for further processing. 
+				Extensive experiments show that PGIM outperforms state-of-the-art methods on two classic MNER datasets and exhibits a stronger robustness and generalization capability.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%" style="text-align: center;">
+                        <img class="side" src="../images/PGIM.png" width="80%" style="display: block; margin: 0 auto;">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</article>
+
+
+<article>
+    <div class="cell" style="font-size: 16px;">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <b style="font-size: 18px;">LLMs as Bridges: Reformulating Grounded Multimodal Named Entity Recognition</b>
+			<span style="font-size: 16px;"> [<a href="https://arxiv.org/abs/2402.09989">PDF</a>]</span>
+                        <br>
+                        <span style="font-size: 16px;">Grounded Multimodal Named Entity Recognition (GMNER) is a nascent multimodal task that aims to identify named entities, entity types and their corresponding visual regions. GMNER task exhibits two challenging properties: 1) The weak correlation between image-text pairs in social media results in a significant portion of named entities being ungroundable. 2) There exists a distinction between coarse-grained referring expressions commonly used in similar tasks (e.g., phrase localization, referring expression comprehension) and fine-grained named entities. In this paper, we propose RiVEG, a unified framework that reformulates GMNER into a joint MNER-VE-VG task by leveraging large language models (LLMs) as a connecting bridge. This reformulation brings two benefits: 1) It maintains the optimal MNER performance and eliminates the need for employing object detection methods to pre-extract regional features, thereby naturally addressing two major limitations of existing GMNER methods. 2) The introduction of entity expansion expression and Visual Entailment (VE) Module unifies Visual Grounding (VG) and Entity Grounding (EG). It enables RiVEG to effortlessly inherit the Visual Entailment and Visual Grounding capabilities of any current or prospective multimodal pretraining models. Extensive experiments demonstrate that RiVEG outperforms state-of-the-art methods on the existing GMNER dataset and achieves absolute leads of 10.65%, 6.21%, and 8.83% in all three subtasks.
+</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="50%" style="text-align: center;">
+                        <img class="side" src="../images/RiVEG.jpg" width="80%" style="display: block; margin: 0 auto;"> 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</article>
+
+
+
+<style type="text/css">
+	.white {
+		background-color:#FFFFFF;
+		padding-bottom: 55px;
+		box-shadow: -3px 3px 1px #FAFAFA;
+		border-radius:15px;
+		-moz-border-radius:25px; /* Old Firefox */
+	}
+	.post{
+		padding-top: 10px;
+		padding-bottom:35px;
+	}
+	.main_cell{
+		background-color:#FFFFFF;
+		border-radius:15px;
+		padding:5px;
+		margin-bottom: 10px;
+	}
+	.cell{
+		background-color:rgb(237, 237,237);
+		border-radius:15px;
+
+		padding:15px;
+		margin-bottom: 10px;
+	}
+	.title{
+		font-family: 'Merriweather',Georgia, Times;
+		font-size: 17px;
+	}
+	.body {
+		padding-left: 15px;
+		font-family: 'HelveticaNeue-Light','Merriweather', Georgia, Times;
+    	font-size: 18px;
+	}
+	article {
+	        overflow: hidden;
+	}
+	table {
+		display: table;
+    	max-width: 100%;
+    	background-color: transparent;
+		border-collapse: collapse;
+    	border-spacing: 0;
+    	border-color: grey;
+		border: 0;
+	}
+	td {
+	border: 0;	
+	}
+</style>
